@@ -75,4 +75,23 @@ public class Test01 {
 
 
 
+
+
+    /**
+     * 乐观锁失败 github
+     */
+    @Test
+    public void optimisticLockerFail(){
+        User user = userMapper.selectById(1596372880214577154L);
+
+        System.out.println(user);
+
+        //修改
+        user.setName("小李");
+        //模拟修改了版本号
+        user.setVersion(user.getVersion() + 1);
+
+        int i = userMapper.updateById(user);
+    }
+
 }

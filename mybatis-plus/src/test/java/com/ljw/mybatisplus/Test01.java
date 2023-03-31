@@ -38,5 +38,22 @@ public class Test01 {
         System.out.println(user);
     }
 
+    /**
+     * 更新(动态sql)
+     */
+    @Test
+    public void update(){
+        User user = new User();
+        user.setId(5L);
+        user.setName("李五");
+        user.setAge(57);
+
+        //根据id，修改user
+        int result = userMapper.updateById(user);
+
+        //根据
+//        Wrapper<User> userWrapper = new Wrapper<>();
+
+    }
 
 }

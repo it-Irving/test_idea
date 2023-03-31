@@ -39,4 +39,22 @@ public class Test01 {
     }
 
 
+
+
+
+    /**
+     * 测试乐观锁（成功）
+     */
+    @Test
+    public void optimisticLocker(){
+        User user = userMapper.selectById(5L);
+
+        System.out.println(user);
+
+        //修改user
+        user.setAge(33);
+
+        int result = userMapper.updateById(user);
+    }
+
 }

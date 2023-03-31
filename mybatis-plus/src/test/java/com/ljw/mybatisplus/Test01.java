@@ -21,4 +21,22 @@ public class Test01 {
         System.out.println(userList);
     }
 
+    /**
+     * 插入测试
+     */
+    @Test
+    public void insert(){
+        User user = new User();
+        user.setName("王五11");
+        user.setAge(30);
+        user.setEmail("1234556@qq.com");
+
+        //影响行数
+        int result = userMapper.insert(user);
+
+        System.out.println(result);
+        System.out.println(user);
+    }
+
+
 }

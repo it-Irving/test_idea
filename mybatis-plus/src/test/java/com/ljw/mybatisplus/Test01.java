@@ -58,7 +58,6 @@ public class Test01 {
 
 
 
-
     /**
      * 测试乐观锁（成功）
      */
@@ -73,5 +72,7 @@ public class Test01 {
 
         int result = userMapper.updateById(user);
     }
+
+
 
 }

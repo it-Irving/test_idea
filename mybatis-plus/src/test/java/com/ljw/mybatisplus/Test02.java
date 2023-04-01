@@ -6,6 +6,8 @@ public class Test02 {
         System.out.println("5555");
         System.out.println("5555");
         System.out.println("5555");
+        System.out.println("11111111111111111111");
+        System.out.println("11111111111111111111");
     }
 
 
